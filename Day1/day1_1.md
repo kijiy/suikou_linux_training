@@ -1,3 +1,3 @@
-#Day1 Installation of Ubuntu on Windows
+# Day1 Installation of Ubuntu on Windows
 
 
