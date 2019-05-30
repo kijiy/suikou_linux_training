@@ -62,5 +62,7 @@ The other way, you can chose the absolute path. Absolute path is the path which 
     cd practice_day1        #This relative path is not available as I mentioned above.
     cd /absolute/path/you/got/above       #You can!
 ```  
+The concept of absolute/relative path is shown below.  
+![path visual](https://github.com/kijiy/suikou_linux_training/blob/images/image/path_image.001.jpeg)  
 
 
