@@ -63,6 +63,6 @@ The other way, you can chose the absolute path. Absolute path is the path which 
     cd /absolute/path/you/got/above       #You can!
 ```  
 The concept of absolute/relative path is shown below.  
-![path visual](https://github.com/kijiy/suikou_linux_training/blob/images/image/path_image.001.jpeg)  
+<img src="https://github.com/kijiy/suikou_linux_training/blob/images/image/path_image.001.jpeg" width="400px">
 
 
