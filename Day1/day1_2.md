@@ -1,6 +1,6 @@
-## Training of Linux commands
+# Training of Linux commands
 
-### *ls*: list the contents in a directory  
+## *ls*: list the contents in a directory  
 `ls` command can be used to see the contents in a directory. The term of directory is equal to the folder.  
 ``` bash
     ls          #maybe you can't find any outputs
@@ -12,7 +12,7 @@ You can put the directory as an argument.
                 #Probabry you can see some contents.
 ```
 
-### *mkdir*: make a directory  
+## *mkdir*: make a directory  
 `mkdir` command can be used to make a directory.  
 ``` bash
     mkdir work  
@@ -24,7 +24,7 @@ You can put the directory as an argument.
     ls work     #Then you can find a new directory in work directory,
 ```
 
-### *cd*: change a working directory
+## *cd*: change a working directory
 `cd` command can be used to change the working directory.  
 ``` bash
     ls          #Probably you will find the "work" directory.  
@@ -32,7 +32,7 @@ You can put the directory as an argument.
     ls          #Then you can find the "practice_day1".
 ``` 
 
-### *pwd*: **P**rint **W**orking **D**irectory  
+## *pwd*: **P**rint **W**orking **D**irectory  
 `pwd` command can be used to check the absolute path of current directory.  
 ``` bash
     pwd         #You can know the path of the current directory.
@@ -63,6 +63,30 @@ The other way, you can chose the absolute path. Absolute path is the path which 
     cd /absolute/path/you/got/above       #You can!
 ```  
 The concept of absolute/relative path is shown below.  
-<img src="https://github.com/kijiy/suikou_linux_training/blob/images/image/path_image.001.jpeg" width="400px">
+<img src="https://github.com/kijiy/suikou_linux_training/blob/images/image/path_image.001.jpeg" width="450px">
+  
+## *echo*: print any word  
+This command is used to print any word.  
+``` bash
+    echo "practice"
+```
+  
+## *>*: redirect
+Using this character, you can store the output of some command to a file.  
+``` bash
+    echo "practice" > test1
+    ls          #You will find the "test1" file.
+```  
 
+## *cat*: print the content of files.  
+``` bash
+    cat test1   #You can see the content of "test1" and confirm your command above has succeeded.
+```  
+`cat` can also be used for merge 2 files.  
+``` bash
+    echo "Linux" > test2
+    ls          #You will find "test1" and "test2"
+    cat test1 test2         #Now test1 and test2 are merged!
+    cat test1 test2 > test_merge    #You can also store the merged output as files.
+```  
 
