@@ -63,7 +63,24 @@ The other way, you can chose the absolute path. Absolute path is the path which 
     cd /absolute/path/you/got/above       #You can!
 ```  
 The concept of absolute/relative path is shown below.  
-<img src="https://github.com/kijiy/suikou_linux_training/blob/images/image/path_image.001.jpeg" width="450px">
+<img src="https://github.com/kijiy/suikou_linux_training/blob/images/image/path_image.001.jpeg" width="600px">  
+To better understand the structure of file system, "tree" command is useful. "tree" is not implemented in default, you need to install it by yourself. For ubuntu users,  
+``` bash
+    sudo apt install tree #sudo means you excute the command as an administrator. 
+```
+For mac users,  
+``` bash
+    brew install tree
+```
+Then the command will be installed.  
+To see the architecture of current directory,  
+``` bash
+    tree
+```  
+For work directory,  
+``` bash
+    tree work
+```  
   
 ## *echo*: print any word  
 This command is used to print any word.  
