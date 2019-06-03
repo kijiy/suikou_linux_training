@@ -95,7 +95,7 @@ Using this character, you can store the output of some command to a file.
     ls          #You will find the "test1" file.
 ```  
 
-## *cat*: print the content of files.  
+## *cat*: print the content of files  
 ``` bash
     cat test1   #You can see the content of "test1" and confirm your command above has succeeded.
 ```  
@@ -106,4 +106,11 @@ Using this character, you can store the output of some command to a file.
     cat test1 test2         #Now test1 and test2 are merged!
     cat test1 test2 > test_merge    #You can also store the merged output as files.
 ```  
+
+## *less*: browse the file contents  
+`less` command is used to read the file content. This command open a new window to read the file, so it's useful for browsing a large file.  
+``` bash
+    less test_merge #To quit browsing, pless "q".
+```
+
 
