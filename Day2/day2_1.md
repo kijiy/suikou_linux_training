@@ -25,5 +25,15 @@ Each command has some options which enable detailed functions. For example,
     gunzip data1_day2.tsv.gz #This file is what you downloaded above.
 ```
 
-## *head*: print first *n* lines of output or files.  
+## *head*: print first *n* lines of command output or files.  
+`head` prints first *n* lines of command output or files. This command is used to do a brief check of file content. Very useful!  
+``` bash
+    head data1_day2.tsv
+    head -n 20 data1_day2.tsv #default output lines are 10 and you can specify the output lines by the option of "n".
+```
 
+## *|(pipe)*: connect the previout output to tne next command
+`|(pipe)` connect the previous outputs to the next command arguement. This concept is difficult to explain and trying by yourself would be the best.  
+``` bash
+    cat data1_day2.tsv | head       #In this case, this command is same with "head data1_day2".
+```
