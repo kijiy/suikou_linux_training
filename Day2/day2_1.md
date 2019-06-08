@@ -25,4 +25,5 @@ Each command has some options which enable detailed functions. For example,
     gunzip data1_day2.tsv.gz #This file is what you downloaded above.
 ```
 
+## *head*: print first *n* lines of output or files.  
 
