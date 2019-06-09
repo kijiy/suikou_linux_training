@@ -37,3 +37,58 @@ Each command has some options which enable detailed functions. For example,
 ``` bash
     cat data1_day2.tsv | head       #In this case, this command is same with "head data1_day2".
 ```
+
+## *grep*: extract lines which include specific patterns.  
+``` bash
+    grep "rs4947963" data1_day2.tsv
+    grep -v "rs4947963" data1_day2.tsv          #"v" option extracts lines which do not include specified patterns.
+    grep -v "rs4947963" data1_day2.tsv | head   #The output is so long that connecting to "head" or "less" using pipe might be better.
+```  
+You can also set text file for query.  
+``` bash
+    echo "rs4947963" > q1.txt
+    echo "rs13227878" > q2.txt
+    cat q1.txt q2.txt > q.txt   #File merge
+    grep -f q.txt data1_day2.tsv
+```
+
+## *wc*: count words  
+`wc` is used to count words. Especially, "wc -l" is useful to count total number of lines.  
+``` bash
+    wc -l q.txt
+    grep -f q.txt data1_day2.tsv | wc -l
+```
+
+## *cut*: select specific columns  
+``` bash
+    grep "rs13227878" data1_day2.tsv | cut -f 1
+```  
+Default column separator is "tab" and if you wanna change it, use option "d".  
+``` bash
+    grep "rs13227878" data1_day2.tsv | cut -f 4 
+    grep "rs13227878" data1_day2.tsv | cut -f 4 | cut -d "." -f 1
+```
+
+## *sort*: sorting rows in order.  
+Sometimes sorting the file contents is important. In this case, `sort` is useful.  
+``` bash
+    head data1_day2.tsv | sort -k 6     #"k" option specify key column to sort.
+```  
+Default sorting is based on dictionary/increasing order. If you want to sort number or sort with increasing manner, "n(number)" or "r(reverse)" option is needed.  
+Download data2_day2.txt from the github.  
+``` bash
+    cat data2_day2.txt      #check the file content
+    sort data2_day2.txt     #maybe not sorted in expected order
+    sort -n data2_day2.txt  #it works
+    sort -nr data2_day2.txt #decreasing manner
+    head data1_day2.txt | sort -k7nr    #better to remember the phrase "-k[column number]nr" to sort with specific numeric column in decreasing manner
+```
+
+## *uniq*: remove dupricated lines
+`uniq` command remove dupricated lines.  
+**Notice: You need to sort before uniq**  
+``` bash
+    cut -f 1 data1_day2.txt | sort | uniq
+```
+
+
