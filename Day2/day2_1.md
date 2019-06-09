@@ -91,4 +91,8 @@ Download data2_day2.txt from the github.
     cut -f 1 data1_day2.txt | sort | uniq
 ```
 
-
+## *od -c*: print special character  
+`od -c` prints special characters such as linefeed code, tab or so. Sometimes we cannot distinguish the space with tab and then this command is useful. In other case, this command is useful when we check the linefeed code. Text files made in Windows specify linefeed code as "\r\n" but in Mac or Linux, "\n". This difference sometimes leads serious error.  
+``` bash
+    od -c data1_day2.tsv | head #This file seems tab-delimited
+```
