@@ -5,4 +5,4 @@
 
 2019/06/10 Day2: Command training 1
 
-2019/06/17 Day3
+2019/06/17 Day3: Exercise!
