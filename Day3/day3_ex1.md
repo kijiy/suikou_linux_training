@@ -9,4 +9,13 @@
 # B: fasta handling  
 ## 1. See "danio.fa". This is the fasta-formatted zebrafish transcripts. In fasta format, each query block consists of ">" started header line and its DNA (or protein) sequence. How many queries does this danio.fa contain?  
 ## 2. Count and compare the numbers of transcripts and genes. Why the numbers are different? Trancript ID and gene ID are denoted as "ENSDART(ENSembl DAnio Ratio Transcript)" and "ENSDARG(ENSembl DAnio Rario Gene)".  
-## 3. How many nucleotides does "ENSDART00000169803.2" have? This question is not so difficult but needs some kind of idea. Maybe this needs additional command I've not told you yet so google the command which satisfies your idea.  
+## 3. How many nucleotides does "ENSDART00000169803.2" have? *wc* command and this command would be useful.  
+### *tr*: remove/replace characters  
+`tr` command must be used after the pipe connection.  
+``` bash
+    [output] | tr -d "[character]"  #To remove a specific character  
+    [output] | tr "[target]" "[replacement]"  #To replace characters  
+    echo "abcd" | tr -d "d"  
+    echo "abcd" | tr "c" "\n"  #Insert linefeed code
+```
+

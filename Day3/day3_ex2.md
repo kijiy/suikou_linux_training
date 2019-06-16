@@ -1,12 +1,19 @@
 # A: Fastq maniplation  
-## 1. Download "fileset_ex_day2.tar.gz" from github.  
-## 2. Decompress the downloaded files. I didn't tell you how to decompress tar.gz, so google it. 
-## 3. See "age.txt". This file is tab-delimited and each column shows scientific name, common name, max weight and maximum lifespan from left. Which is the heaviest species?  
-## 4. Which is the longest-lived species?  
-## 5. How many Genus in this list?  
-## 6. What is the median value of maximum weight excluding unknown value?
+## 1. Download "linux_prac_day3.fastq.gz" from github.  
+## 2. Google the format of fastq file. Fastq is the basic output format of NGS data.  
+## 3. How many sequences are in this file?
+## 4. How long is each read in this file? Tou can believe the number of "length=" on the header but check all the sequences.  
 
-# B: fasta handling  
-## 1. See "danio.fa". This is the fasta-formatted zebrafish transcripts. In fasta format, each query block consists of ">" started header line and its DNA (or protein) sequence. How many queries does this danio.fa contain?  
-## 2. Count and compare the numbers of transcripts and genes. Why the numbers are different? Trancript ID and gene ID are denoted as "ENSDART(ENSembl DAnio Ratio Transcript)" and "ENSDARG(ENSembl DAnio Rario Gene)".  
-## 3. How many nucleotides does "ENSDART00000169803.2" have? This question is not so difficult but needs some kind of idea. Maybe this needs additional command I've not told you yet so google the command which satisfies your idea.  
+# B: GTF file  
+## 1. Download "danio_GRCz10_head.gtf". 
+## 2. GTF is a major format to store the information about gene position. Google the format and sort with the position of each gene. Maybe you need to investigate another option of `sort`...  
+## 3. How many gene ids are there in this file? See 9th field.  
+## 4. How many gene names are there in this file?  
+## 5. The number of gene ids and gene names will not be consistent. Which gene is the clue? This command might be useul in some cases...  
+### *paste*: merge 2 files with field.  
+`paste` merge 2 files by fields. `cat` can also be used to merge files but it's for merging by row.  
+``` bash
+    echo -e "a\na\na" > test.a
+    echo -e "b\nb\nb" > test.b
+    paste test.a test.b
+```
