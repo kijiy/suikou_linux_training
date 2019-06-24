@@ -2,7 +2,7 @@
 ## 1. Download "linux_prac_day3.fastq.gz" from github.  
 ## 2. Google the format of fastq file. Fastq is the basic output format of NGS data.  
 ## 3. How many sequences are in this file?
-## 4. How long is each read in this file? Tou can believe the number of "length=" on the header but check all the sequences.  
+## 4. How long is each read in this file? You can believe the number of "length=" on the header but check all the sequences.  
 
 # B: GTF file  
 ## 1. Download "danio_GRCz10_head.gtf". 
